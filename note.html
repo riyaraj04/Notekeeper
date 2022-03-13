@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notekeeper</title>
+    <link rel="stylesheet" href="./note.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Notekeeper</div>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" id="text" placeholder="Enter Your Title..." autocomplete="off" name="title">
+            </div>
+            <div class="form-control">
+                <label for="desc">Description</label><input type="text" id="desc" placeholder="Enter Your Description..."
+                    autocomplete="off" name="desc">
+            </div>
+            <input type="button" value="save" onclick="msg()"/> 
+        </form>
+        <script type="text/javascript">  
+            function msg(){  
+             alert("Do you want to save it?");  
+            }  
+            </script>  
+</div>
+<div id="app">
+    <button class="add-note" type="button">+</button><br>
+    </div>
+    <div class="container">
+        <div class="pagi">
+        <a href="#" class="button">«</a>
+        <a href="#" class="button">1</a>
+        <a href="#" class="button">2</a>
+        <a href="#" class="button">3</a>
+        <a href="#" class="button">4</a>
+        <a href="#" class="button">5</a>
+        <a href="#" class="button">6</a>
+        <a href="#" class="button">7</a>
+        <a href="#" class="button">8</a>
+        <a href="#" class="button">»</a>
+       </div>
+       </div>
+</body>
+<script src="./note.js"></script>
+</html>
